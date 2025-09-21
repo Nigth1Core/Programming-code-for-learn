@@ -14,10 +14,10 @@ int main() {
     double d;
 
     // Вывод размеров типов данных
-    printf("sizeof(c)=%d\tsizeof(uc)=%d\n", sizeof(c), sizeof(uc));
-    printf("sizeof(i)=%d\tsizeof(u)=%d\n", sizeof(i), sizeof(u));
-    printf("sizeof(s)=%d\tsizeof(l)=%d\n", sizeof(s), sizeof(l));
-    printf("sizeof(f)=%d\tsizeof(d)=%d\n\n", sizeof(f), sizeof(d));
+    printf("sizeof(c)=%zu\tsizeof(uc)=%zu\n", sizeof(c), sizeof(uc));
+    printf("sizeof(i)=%zu\tsizeof(u)=%zu\n", sizeof(i), sizeof(u));
+    printf("sizeof(s)=%zu\tsizeof(l)=%zu\n", sizeof(s), sizeof(l));
+    printf("sizeof(f)=%zu\tsizeof(d)=%zu\n\n", sizeof(f), sizeof(d));
 
     // Анализ char и unsigned char
     uc = c = CHAR_MAX;
