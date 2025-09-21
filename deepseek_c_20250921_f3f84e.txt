@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(void) {
+    // Объявление переменных
+    float a = 5.0f, b;
+    int c = 5, d;
+    
+    // Ввод значений с клавиатуры
+    printf("Введите значение b (вещественное): ");
+    scanf("%f", &b);
+    
+    printf("Введите значение d (целое): ");
+    scanf("%d", &d);
+    
+    printf("\nИсходные значения:\n");
+    printf("a = %.2f, b = %.2f, c = %d, d = %d\n\n", a, b, c, d);
+    
+    // Вычисление выражений
+    // a = a + b - 2
+    a = a + b - 2;
+    printf("После 'a = a + b - 2':\n");
+    printf("a = %.2f, b = %.2f, c = %d, d = %d\n\n", a, b, c, d);
+    
+    // c = c + 1, d = c - a + d
+    c = c + 1, d = c - a + d;
+    printf("После 'c = c + 1, d = c - a + d':\n");
+    printf("a = %.2f, b = %.2f, c = %d, d = %d\n\n", a, b, c, d);
+    
+    // a = a * c, c = c - 1
+    a = a * c, c = c - 1;
+    printf("После 'a = a * c, c = c - 1':\n");
+    printf("a = %.2f, b = %.2f, c = %d, d = %d\n\n", a, b, c, d);
+    
+    // a = a / 10, c = c / 2, b = b - 1, d = d * (c + b + a)
+    a = a / 10, c = c / 2, b = b - 1, d = d * (c + b + a);
+    printf("После 'a = a / 10, c = c / 2, b = b - 1, d = d * (c + b + a)':\n");
+    printf("a = %.2f, b = %.2f, c = %d, d = %d\n\n", a, b, c, d);
+    
+    return 0;
+}
